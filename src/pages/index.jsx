@@ -4,6 +4,8 @@ const Page = () => {
   return (
     <Container className="mt-3">
       <p>Hello, world!</p>
+
+      <p>Hello, world!</p>
     </Container>
   );
 };
