@@ -1,11 +1,12 @@
 import NavbarTop from '@/components/layout/navbar-top';
 import Footer from '@/components/layout/footer';
+import NavBar from '@/components/layout/nav-bar';
 
 const Component = ({ children }) => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <header>
-        <NavbarTop />
+        <NavBar />
       </header>
 
       <main className="container-fluid">
