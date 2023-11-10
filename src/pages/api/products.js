@@ -1,21 +1,21 @@
-import { users } from '@/data/users';
+import { products } from '@/data/products';
 
 async function handler(req, res) {
-  console.log(`[${req.method}] [users]`);
+  console.log(`[${req.method}] [products]`);
 
   switch(req.method) {
   case 'GET':
-    res.status(200).json(users);
+    res.status(200).json(products);
     break;
 
   case 'POST':
     console.log(req.body);
 
-    const user = req.body;
+    const product = req.body;
 
-    users.push(user);
+    products.push(product);
 
-    res.status(200).json(user);
+    res.status(200).json(product);
     break;
 
   default:
