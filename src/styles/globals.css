@@ -25,3 +25,7 @@ body {
 .nav-link:hover {
   color: rgb(48, 48, 158);
 }
+
+.show-table {
+  width: 50%;
+}
