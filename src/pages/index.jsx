@@ -16,6 +16,7 @@ const Page = () => {
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <Button
               className="btn btn-primary btn-lg px-4 gap-3"
+              href="/products"
             >
               Get Started
             </Button>

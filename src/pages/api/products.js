@@ -13,6 +13,8 @@ async function handler(req, res) {
 
     const product = req.body;
 
+    product.id = (products.length + 1);
+
     products.push(product);
 
     res.status(200).json(product);
