@@ -76,7 +76,7 @@ function Page() {
         <td>
           <Link href={`/products/${product.id - 1}`}>Show</Link>
           <span> | </span>
-          <Link href="#">Edit</Link>
+          <Link href={`/products/${product.id - 1}/edit`}>Edit</Link>
           <span> | </span>
           <Link href="" onClick={() => handleDelete(product.id)}>Delete</Link>
         </td>

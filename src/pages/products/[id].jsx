@@ -14,7 +14,7 @@ function Page() {
     console.log('Current ID:', id);
     const fetchProduct = async () => {
       try {
-        // Check if id is truthy (not null or undefined) before making the request
+        // Check if id is truthy before making the request
         if (id) {
           const response = await fetch(`/api/products/${id}`, {
             method: 'GET',
@@ -95,7 +95,7 @@ function Page() {
             </tbody>
           </Table>
 
-          <Link href="">Edit</Link>
+          <Link href={`/products/${product.id - 1}/edit`}>Edit</Link>
 
           <span> | </span>
 
