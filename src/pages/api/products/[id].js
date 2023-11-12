@@ -1,26 +1,26 @@
-import { users } from '@/data/users';
+import { products } from '@/data/products';
 
 async function handler(req, res) {
   const { id } = req.query;
-  console.log(`[${req.method}] [Users]`);
+  console.log(`[${req.method}] [products]`);
 
   switch(req.method) {
   case 'GET':
-    res.status(200).json(users[id]);
+    res.status(200).json(products[id]);
     break;
 
   case 'PUT':
     console.log(req.body);
 
-    const user = req.body;
+    const product = req.body;
 
-    users[id] = user;
+    products[id] = product;
 
-    res.status(200).json(user);
+    res.status(200).json(product);
     break;
 
   case 'DELETE':
-    users.splice(id, 1);
+    products.splice(id, 1);
 
     res.status(200).json({ msg: 'Deleted successfully' });
     break;

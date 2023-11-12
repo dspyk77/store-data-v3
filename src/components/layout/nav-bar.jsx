@@ -5,6 +5,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import LinkedIn from '@/components/linked-in';
 import GitHub from '@/components/git-hub-icon';
 import PersonIcon from '@/components/person-icon';
+import HomeIcon from '@/components/home-icon';
+
 
 function OffcanvasExample() {
   return (
@@ -32,7 +34,12 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#">Home</Nav.Link>
+                  <Nav.Link href="#">
+                    <HomeIcon />
+
+                    <span className="ms-2">Home</span>
+                  </Nav.Link>
+
 
                   <Nav.Link
                     href="https://dspyk77.github.io/landing-page/index.html"
@@ -51,7 +58,9 @@ function OffcanvasExample() {
                   <Nav.Link href="https://www.linkedin.com/in/daniel-spykstra-0b3045218/">
                     <LinkedIn />
 
-                    <span className="ms-2">Linkedin</span>
+
+                    <span className="ms-2">LinkedIn</span>
+
                   </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
